@@ -46,7 +46,7 @@ export default function Mission() {
             >
               <div className="mb-6 flex justify-center lg:justify-start lg:pl-8">
                  <img 
-                  src="/mission.png" 
+                  src="/static/images/mission.png" 
                   alt="Our Mission" 
                   className="w-48 h-auto object-contain"
                 />

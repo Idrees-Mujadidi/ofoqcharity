@@ -124,7 +124,7 @@ export default function Hero() {
             {/* Main Image Container - Hero.png */}
             <div className="relative z-10 ml-auto w-[85%] aspect-[3/4] md:aspect-[4/5] lg:aspect-[3/4] rounded-tl-[4rem] rounded-br-[4rem] rounded-tr-2xl rounded-bl-2xl overflow-hidden shadow-2xl">
               <img
-                src="/Hero.png"
+                src="/static/images/Hero.png"
                 alt="Hopeful child"
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
               />
@@ -133,7 +133,7 @@ export default function Hero() {
             {/* Secondary Image - Hero2.png - Overlapping */}
             <div className="absolute bottom-0 left-0 z-20 w-[55%] aspect-square rounded-tr-[3rem] rounded-bl-[3rem] rounded-tl-2xl rounded-br-2xl overflow-hidden shadow-2xl border-[6px] border-bg-light dark:border-bg-dark">
                <img 
-                  src="/Hero2.png" 
+                  src="/static/images/Hero2.png" 
                   alt="Charity work" 
                   className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
                 />

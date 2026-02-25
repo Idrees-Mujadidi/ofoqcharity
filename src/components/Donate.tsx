@@ -22,7 +22,7 @@ const BankAccount = ({ bankName, accountName, accountNo, swiftCode }: { bankName
       
       <div className="relative z-10">
         <div className="flex items-center gap-4 mb-4">
-          <img src="/Azizibanklogo.jpg" alt="Azizi Bank Logo" className="w-12 h-12 object-contain rounded-lg bg-white p-1" />
+          <img src="/static/images/Azizibanklogo.jpg" alt="Azizi Bank Logo" className="w-12 h-12 object-contain rounded-lg bg-white p-1" />
           <div>
             <h4 className="text-sm font-semibold text-text-secondary dark:text-text-dark-secondary uppercase tracking-wider mb-0.5">Bank Transfer</h4>
             <h3 className="font-serif text-xl font-bold text-brand-navy dark:text-white">{bankName}</h3>

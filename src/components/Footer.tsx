@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="space-y-6">
             <Link to="/" className="flex items-center gap-3 group">
               <img 
-                src="/logo.png" 
+                src="/static/images/logo.png" 
                 alt="Ofoq Charity Logo" 
                 className="h-16 w-16 object-contain rounded-full bg-white"
               />

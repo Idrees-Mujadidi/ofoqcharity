@@ -37,7 +37,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 group">
           <img 
-            src="/logo.png" 
+            src="/static/images/logo.png" 
             alt="Ofoq Charity Logo" 
             className="h-12 w-12 object-contain rounded-full bg-white shadow-sm"
           />

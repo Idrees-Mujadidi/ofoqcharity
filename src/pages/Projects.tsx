@@ -47,7 +47,7 @@ export default function Projects() {
             {/* Top Large Image */}
             <div className="w-full h-64 md:h-80 lg:h-96 overflow-hidden rounded-tl-[3rem] md:rounded-tl-[4rem] rounded-br-[3rem] md:rounded-br-[4rem] shadow-2xl transform hover:scale-[1.02] transition-transform duration-500">
               <img 
-                src="/propage1.jpg" 
+                src="/static/images/propage1.jpg" 
                 alt="Construction Project" 
                 className="w-full h-full object-cover"
               />
@@ -57,14 +57,14 @@ export default function Projects() {
             <div className="grid grid-cols-2 gap-6">
               <div className="w-full h-40 md:h-56 overflow-hidden rounded-tl-[2rem] md:rounded-tl-[3rem] rounded-br-[2rem] md:rounded-br-[3rem] shadow-xl transform hover:scale-[1.02] transition-transform duration-500">
                 <img 
-                  src="/propage2.jpg" 
+                  src="/static/images/propage2.jpg" 
                   alt="Community Building" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="w-full h-40 md:h-56 overflow-hidden rounded-tl-[2rem] md:rounded-tl-[3rem] rounded-br-[2rem] md:rounded-br-[3rem] shadow-xl transform hover:scale-[1.02] transition-transform duration-500">
                 <img 
-                  src="/propage3.jpg" 
+                  src="/static/images/propage3.jpg" 
                   alt="Infrastructure Development" 
                   className="w-full h-full object-cover"
                 />

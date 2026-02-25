@@ -129,7 +129,7 @@ export default function Contact() {
             <div className="relative z-10 w-full max-w-md md:max-w-lg">
                <div className="absolute inset-0 bg-brand-gold/20 rounded-full blur-3xl -z-10 transform scale-90 translate-y-4"></div>
                <img
-                src="/contact.png"
+                src="/static/images/contact.png"
                 alt="Contact Us"
                 className="w-full h-auto object-contain drop-shadow-2xl transform hover:scale-105 transition-transform duration-700"
               />

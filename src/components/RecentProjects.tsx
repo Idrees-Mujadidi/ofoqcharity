@@ -6,19 +6,19 @@ const projects = [
     id: 1,
     title: "Clean Water Initiative",
     description: "Providing sustainable access to clean and safe drinking water for remote villages, reducing waterborne diseases and improving overall health.",
-    image: "/Project1.png",
+    image: "/static/images/Project1.png",
   },
   {
     id: 2,
     title: "Education for All",
     description: "Building schools and supplying essential learning materials to underprivileged children, empowering the next generation through knowledge.",
-    image: "/Project2.png",
+    image: "/static/images/Project2.png",
   },
   {
     id: 3,
     title: "Healthcare Outreach",
     description: "Mobile medical camps delivering essential healthcare services, checkups, and medicines to rural communities with limited access to hospitals.",
-    image: "/Project3.png",
+    image: "/static/images/Project3.png",
   },
 ];
 

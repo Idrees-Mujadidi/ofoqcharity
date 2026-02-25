@@ -66,7 +66,7 @@ export default function About() {
             <div className="relative group">
               <div className="absolute inset-0 bg-brand-gold/20 rounded-full blur-3xl group-hover:bg-brand-gold/30 transition-all duration-700"></div>
               <img 
-                src="/logo.png" 
+                src="/static/images/logo.png" 
                 alt="Ofoq Charity Logo" 
                 className="relative z-10 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 object-contain rounded-full bg-white p-4 shadow-2xl transform group-hover:scale-105 transition-transform duration-700"
               />
