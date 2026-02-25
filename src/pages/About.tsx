@@ -122,45 +122,53 @@ export default function About() {
       </section>
 
       {/* Mission & Vision Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 mb-20 md:mb-32 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-          {/* Mission */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="p-6 sm:p-8 md:p-10 rounded-[2rem] md:rounded-[3rem] bg-white dark:bg-white/5 border border-brand-navy/5 dark:border-white/10 hover:border-brand-gold/30 transition-all duration-500 hover:shadow-2xl group"
-          >
-            <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-brand-gold mb-6 md:mb-8 group-hover:scale-110 transition-transform duration-500">
-              <Target className="w-8 h-8 md:w-10 md:h-10" />
-            </div>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-brand-navy dark:text-white mb-4 md:mb-6">Our Mission</h2>
-            <p className="text-text-secondary dark:text-text-dark-secondary text-base md:text-lg leading-relaxed font-light">
-              To empower vulnerable communities in Afghanistan by providing access to essential services, 
-              fostering sustainable development, and nurturing hope through education, healthcare, 
-              and scientific research. We strive to be the bridge between compassion and action.
-            </p>
-          </motion.div>
+      <section className="py-16 md:py-24 bg-brand-blue dark:bg-blue-dark relative overflow-hidden mb-20 md:mb-32">
+        {/* Decorative background elements */}
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
+          <div className="absolute -top-24 -left-24 w-64 h-64 bg-white rounded-full blur-3xl" />
+          <div className="absolute -bottom-24 -right-24 w-64 h-64 bg-brand-gold rounded-full blur-3xl" />
+        </div>
 
-          {/* Vision */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="p-6 sm:p-8 md:p-10 rounded-[2rem] md:rounded-[3rem] bg-white dark:bg-white/5 border border-brand-navy/5 dark:border-white/10 hover:border-brand-blue/30 transition-all duration-500 hover:shadow-2xl group"
-          >
-            <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-brand-blue/10 flex items-center justify-center text-brand-blue dark:text-blue-dark mb-6 md:mb-8 group-hover:scale-110 transition-transform duration-500">
-              <Eye className="w-8 h-8 md:w-10 md:h-10" />
-            </div>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-brand-navy dark:text-white mb-4 md:mb-6">Our Vision</h2>
-            <p className="text-text-secondary dark:text-text-dark-secondary text-base md:text-lg leading-relaxed font-light">
-              A prosperous and self-reliant Afghanistan where every individual has the opportunity 
-              to thrive, every child has access to quality education, and healthcare is a right, 
-              not a privilege. We envision a society built on the foundations of knowledge and humanity.
-            </p>
-          </motion.div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-0 divide-y md:divide-y-0 md:divide-x divide-white/20">
+            {/* Mission */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="px-6 md:px-16 py-8 flex flex-col items-center text-center"
+            >
+              <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-white/10 flex items-center justify-center text-brand-gold mb-8 backdrop-blur-sm border border-white/10">
+                <Target className="w-10 h-10 md:w-12 md:h-12" />
+              </div>
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-white mb-6">Our Mission</h2>
+              <p className="text-white/80 text-lg leading-relaxed font-light max-w-md">
+                To empower vulnerable communities in Afghanistan by providing access to essential services, 
+                fostering sustainable development, and nurturing hope through education, healthcare, 
+                and scientific research. We strive to be the bridge between compassion and action.
+              </p>
+            </motion.div>
+
+            {/* Vision */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="px-6 md:px-16 py-8 flex flex-col items-center text-center"
+            >
+              <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-white/10 flex items-center justify-center text-brand-gold mb-8 backdrop-blur-sm border border-white/10">
+                <Eye className="w-10 h-10 md:w-12 md:h-12" />
+              </div>
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-white mb-6">Our Vision</h2>
+              <p className="text-white/80 text-lg leading-relaxed font-light max-w-md">
+                A prosperous and self-reliant Afghanistan where every individual has the opportunity 
+                to thrive, every child has access to quality education, and healthcare is a right, 
+                not a privilege. We envision a society built on the foundations of knowledge and humanity.
+              </p>
+            </motion.div>
+          </div>
         </div>
       </section>
 
