@@ -174,17 +174,47 @@ export default function About() {
 
       {/* Focus Areas Grid */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 mb-20 md:mb-32 relative z-10">
-        <div className="text-center mb-12 md:mb-20">
+        {/* Background Animation Elements */}
+        <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+            <motion.div
+                animate={{
+                    scale: [1, 1.2, 1],
+                    rotate: [0, 90, 0],
+                }}
+                transition={{
+                    duration: 20,
+                    repeat: Infinity,
+                    ease: "linear"
+                }}
+                className="absolute top-0 right-0 w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-brand-gold/5 rounded-full blur-3xl"
+            />
+            <motion.div
+                animate={{
+                    scale: [1, 1.5, 1],
+                    x: [0, 100, 0],
+                }}
+                transition={{
+                    duration: 25,
+                    repeat: Infinity,
+                    ease: "linear"
+                }}
+                className="absolute bottom-0 left-0 w-[400px] h-[400px] md:w-[600px] md:h-[600px] bg-brand-blue/5 rounded-full blur-3xl"
+            />
+        </div>
+
+        <div className="text-center mb-16 md:mb-24">
           <span className="inline-block py-1 px-3 rounded-full bg-brand-blue/10 dark:bg-white/10 text-brand-blue dark:text-white text-xs font-bold tracking-wider uppercase mb-4 md:mb-6">
             What We Do
           </span>
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-brand-navy dark:text-white mb-4 md:mb-6">Our Core Focus Areas</h2>
-          <p className="text-text-secondary dark:text-text-dark-secondary text-base md:text-lg max-w-2xl mx-auto font-light">
-            We take a holistic approach to charity, addressing the most critical needs of our society.
+          <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl font-bold text-brand-navy dark:text-white mb-6">
+            Our Core <span className="text-brand-gold italic">Focus Areas</span>
+          </h2>
+          <p className="text-text-secondary dark:text-text-dark-secondary text-lg md:text-xl max-w-3xl mx-auto font-light leading-relaxed">
+            We take a holistic approach to charity, addressing the most critical needs of our society through dedicated programs and sustainable initiatives.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 lg:gap-y-16">
           {[
             { icon: Users, title: "Aid For Needy Families", desc: "Providing food, shelter, and financial support to those struggling to make ends meet.", color: "gold" },
             { icon: Building, title: "Public Facilities", desc: "Building and renovating essential infrastructure like schools, clinics, and community centers.", color: "blue" },
@@ -195,21 +225,34 @@ export default function About() {
           ].map((item, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="p-6 md:p-8 rounded-[2rem] md:rounded-[2.5rem] bg-white dark:bg-white/5 border border-brand-navy/5 dark:border-white/10 hover:shadow-xl transition-all duration-300 group"
+              className="group relative pl-6 md:pl-0"
             >
-              <div className={`w-14 h-14 md:w-16 md:h-16 rounded-2xl mb-4 md:mb-6 flex items-center justify-center transition-transform duration-500 group-hover:rotate-6 ${
-                item.color === 'gold' ? 'bg-brand-gold/10 text-brand-gold' : 'bg-brand-blue/10 text-brand-blue dark:text-blue-dark'
-              }`}>
-                <item.icon className="w-7 h-7 md:w-8 md:h-8" />
+              {/* Mobile Hover Line Effect */}
+              <div className={`absolute left-0 top-0 bottom-0 w-1 rounded-full transform scale-y-100 md:scale-y-0 transition-transform duration-500 origin-top ${
+                  item.color === 'gold' ? 'bg-brand-gold/30 group-hover:bg-brand-gold' : 'bg-brand-blue/30 dark:bg-blue-400/30 group-hover:bg-brand-blue dark:group-hover:bg-blue-400'
+              } md:hidden`} />
+              
+              <div className="flex flex-col md:items-center md:text-center">
+                <div className={`w-16 h-16 md:w-20 md:h-20 rounded-2xl mb-6 flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:shadow-lg ${
+                    item.color === 'gold' 
+                        ? 'bg-brand-gold/10 text-brand-gold group-hover:bg-brand-gold group-hover:text-white' 
+                        : 'bg-brand-blue/10 text-brand-blue dark:text-blue-dark group-hover:bg-brand-blue group-hover:text-white'
+                }`}>
+                    <item.icon className="w-8 h-8 md:w-10 md:h-10" />
+                </div>
+                
+                <h3 className="font-serif text-2xl font-bold text-brand-navy dark:text-white mb-3 group-hover:text-brand-gold transition-colors duration-300">
+                    {item.title}
+                </h3>
+                
+                <p className="text-text-secondary dark:text-text-dark-secondary font-light leading-relaxed text-base md:text-lg">
+                    {item.desc}
+                </p>
               </div>
-              <h3 className="font-serif text-lg md:text-xl font-bold text-brand-navy dark:text-white mb-3 md:mb-4">{item.title}</h3>
-              <p className="text-text-secondary dark:text-text-dark-secondary font-light leading-relaxed text-sm md:text-base">
-                {item.desc}
-              </p>
             </motion.div>
           ))}
         </div>
