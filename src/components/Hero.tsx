@@ -122,7 +122,7 @@ export default function Hero() {
             className="order-1 lg:order-2 relative py-8"
           >
             {/* Main Image Container - Hero.png */}
-            <div className="relative z-10 ml-auto w-[85%] aspect-[3/4] md:aspect-[4/5] lg:aspect-[3/4] rounded-tl-[4rem] rounded-br-[4rem] rounded-tr-2xl rounded-bl-2xl overflow-hidden shadow-2xl">
+            <div className="relative z-10 ml-auto w-[75%] aspect-[3/4] md:aspect-[4/5] lg:aspect-[3/4] rounded-tl-[4rem] rounded-br-[4rem] rounded-tr-2xl rounded-bl-2xl overflow-hidden shadow-2xl">
               <img
                 src="/static/images/Hero.png"
                 alt="Hopeful child"
@@ -131,7 +131,7 @@ export default function Hero() {
             </div>
             
             {/* Secondary Image - Hero2.png - Overlapping */}
-            <div className="absolute bottom-0 left-0 z-20 w-[55%] aspect-square rounded-tr-[3rem] rounded-bl-[3rem] rounded-tl-2xl rounded-br-2xl overflow-hidden shadow-2xl border-[6px] border-bg-light dark:border-bg-dark">
+            <div className="absolute bottom-0 left-0 z-20 w-[45%] aspect-square rounded-tr-[3rem] rounded-bl-[3rem] rounded-tl-2xl rounded-br-2xl overflow-hidden shadow-2xl border-[6px] border-bg-light dark:border-bg-dark">
                <img 
                   src="/static/images/Hero2.png" 
                   alt="Charity work" 
@@ -140,7 +140,7 @@ export default function Hero() {
             </div>
 
             {/* Decorative Outline */}
-            <div className="absolute top-4 right-[-10px] w-[85%] h-full border-2 border-brand-gold/30 rounded-tl-[4rem] rounded-br-[4rem] rounded-tr-2xl rounded-bl-2xl -z-10" />
+            <div className="absolute top-4 right-[-10px] w-[75%] h-full border-2 border-brand-gold/30 rounded-tl-[4rem] rounded-br-[4rem] rounded-tr-2xl rounded-bl-2xl -z-10" />
 
             {/* Decorative Blobs */}
             <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-brand-gold/20 rounded-full blur-3xl -z-10" />
